@@ -1,0 +1,87 @@
+body, ul, h1, h2, h3, a {
+    margin: 0;
+    padding: 0;
+}
+button {
+    outline: none;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #008080;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+}
+.field-button {
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+}
+.button-right, .button-left {
+    margin: 50px 0 50px;
+}
+.field-cells {
+    display: grid;
+    grid-template-rows: repeat(4, 130px);
+    grid-template-columns: repeat(4, 130px);
+    gap: 2px;
+    background-color: #818181;
+    padding: 1px;
+}
+.cell {
+    background-color: #f0f0f0;
+    font-family: Tahoma;
+    font-size: 320%;
+    text-align: center;
+    padding-top: 26px;
+}
+.point-0 {
+    color: #f0f0f0;
+}
+.point-2 {
+    background-color: #ffffff;
+    color: #818181;
+}
+.point-4 {
+    background-color: #c3c3c3;
+    color: #818181;
+}
+.point-8 {
+    background-color: #B0B0B0;
+    color: #ffffff;
+}
+.point-16 {
+    background-color: #a0c8f0;
+    color: #818181;
+}
+.point-32 {
+    background-color: #386ca0;
+    color: #f0f0f0;
+}
+.point-64 {
+    background-color: #010081;
+    color: #f0f0f0;
+}
+.point-128 {
+    background-color: #082468;
+    color: #f0f0f0;
+}
+.point-256 {
+    background-color: #ff0081;
+    color: #000000;
+}
+.point-512 {
+    background-color: #f27bb1;
+    color: #000000;
+}
+.point-1024 {
+    background-color: #000000;
+    color: #f0f0f0;
+}
+.point-2048 {
+    background-color: #000000;
+    color: #f0f0f0;
+}
